@@ -1,0 +1,21 @@
+			### DESAFIO PPGER ###
+
+	Dupla:  Joao Carlos de Queiroz Prata
+				Matricula: 20151045050465
+
+			Eduardo Mariano de Barros
+				Matricula: 20151045050384
+
+	Curso: Ciencia da Computacao
+
+	Professor: Daniel Silva
+
+	Data: 23 de Maio de 2016
+
+	ATRIBUTOS: 
+		Energia:		0.2778
+		Contraste:		0.1559
+		Homogeneidade:	0.9229
+		Correlacao:		0.9355
+
+	TEMPO:	0.016290 

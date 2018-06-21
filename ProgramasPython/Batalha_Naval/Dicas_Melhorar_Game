@@ -1,0 +1,8 @@
+
+1- Tenha diversos couraçados: você precisará ter cuidado porque precisa garantir que não vai colocar couraçados um em cima do outro no tabuleiro. Você também quer garantir que vai equilibrar o tamanho do tabuleiro e o número de navios para que o jogo ainda seja desafiador de divertido de jogar.
+
+2- Crie navios de tamanhos diverente: isso é mais complicado do que parece. Todas as partes do navio devem estar ligadas horizontal e verticalmente, e você precisa garantir que não vai colocar parte de um navio fora dos limites do tabuleiro.
+
+3- torne seu jogo um jogo para duas pessoas.
+
+4- Use funções para permitir que seu jogo tenha mais recursos, como desempates, estatísticas, e outras!
