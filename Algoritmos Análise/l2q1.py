@@ -12,6 +12,7 @@ def Q1_RECU(n):
         return 0
     return Q1_RECU(n // 2) + Q1_RECU(n // 2 + 1) + Q1_RECU(n // 2 + 2) + n
 
+
 #   Complexidade   #
 # T(n) = 3*T(n/2) + T(1)
 # a = 3, b=2, c=0
@@ -20,6 +21,7 @@ def Q1_RECU(n):
 
 
 # Algoritmo de Memorização #
+
 
 def Q1_VETOR(n):
     P = [-1 for x in range(n + 1)]
@@ -57,9 +59,15 @@ def Q1_MEMO_RECU(n, P):
     if P[n] >= 0:
         return P[n]
 
-    P[n] = Q1_MEMO_RECU(n // 2, P) + Q1_MEMO_RECU((n // 2) + 1, P) + Q1_MEMO_RECU((n // 2) + 2, P) + n
+    P[n] = (
+        Q1_MEMO_RECU(n // 2, P)
+        + Q1_MEMO_RECU((n // 2) + 1, P)
+        + Q1_MEMO_RECU((n // 2) + 2, P)
+        + n
+    )
 
     return P[n]
+
 
 #   Complexidade    #
 #   O(log n)

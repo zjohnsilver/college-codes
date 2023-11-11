@@ -3,10 +3,10 @@
 #
 
 
-#
-
 def festa(lista_amigos, lista_pares_conhecidos):
-    matriz_conhecidos = [[0 for x in range(max(lista_amigos) + 1)] for y in range(max(lista_amigos) + 1)]
+    matriz_conhecidos = [
+        [0 for x in range(max(lista_amigos) + 1)] for y in range(max(lista_amigos) + 1)
+    ]
 
     for amigo in lista_amigos:
         for par in lista_pares_conhecidos:
@@ -28,4 +28,9 @@ def print_matriz(matriz):
         print("\n")
 
 
-print_matriz(festa([3, 4, 1, 2, 6, 7, 8, 0, 12, 13, 11, 10], [(3, 4), (3, 1), (3, 8), (3, 2), (3, 12), (3, 13), (3, 11)]))
+print_matriz(
+    festa(
+        [3, 4, 1, 2, 6, 7, 8, 0, 12, 13, 11, 10],
+        [(3, 4), (3, 1), (3, 8), (3, 2), (3, 12), (3, 13), (3, 11)],
+    )
+)

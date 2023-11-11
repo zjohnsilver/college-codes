@@ -6,6 +6,7 @@
 # Algoritmo para colocar parênteses em uma expressão
 # de maneira que seu valor seja minimo
 
+
 # (vetor_variaveis, operadores, qtd_variaveis)
 def alg03(X, OP, n):
     v_min = [[0 for x in range(n + 1)] for x in range(n + 1)]

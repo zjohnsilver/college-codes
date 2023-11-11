@@ -16,11 +16,15 @@ def mediana(vetorX, vetorY):
     if mx == my:
         return mx
 
-    if (mx > my):
-        return mediana(vetorX[:(len(vetorX) // 2) + 1], vetorY[len(vetorY) // 2:])
+    if mx > my:
+        return mediana(
+            vetorX[: (len(vetorX) // 2) + 1], vetorY[len(vetorY) // 2 :]
+        )
 
-    if (mx < my):
-        return mediana(vetorX[len(vetorX) // 2:], vetorY[:(len(vetorY) // 2)])
+    if mx < my:
+        return mediana(
+            vetorX[len(vetorX) // 2 :], vetorY[: (len(vetorY) // 2)]
+        )
 
 
 print(mediana([1, 2, 3, 4, 20, 30], [15, 17, 30, 40, 50, 55]))
